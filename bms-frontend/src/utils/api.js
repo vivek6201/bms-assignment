@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "http://localhost:4001",
+  baseURL: "https://bms-app-4306cdc3a8d6.herokuapp.com/",
 });
