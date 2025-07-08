@@ -1,14 +1,15 @@
 const express = require('express');
 const dotenv = require('dotenv');
-dotenv.config();
-
+const cors = require("cors");
 const connectDB = require('./config/db');
 const bookRoutes = require('./routes/bookRoutes');
 
+dotenv.config();
 const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(cors())
 
 // DB Connection
 connectDB();
